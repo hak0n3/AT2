@@ -107,6 +107,12 @@ header {
     color: #fff;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .offers {
     width: 100%;
     height: 560px;
@@ -139,6 +145,11 @@ header {
 .offer__arrow {
     justify-self: center;
     align-self: center;
+    
+    position: relative;
+    z-index: 2;
+    
+    cursor: pointer;
 }
 
 .offer__descr {
@@ -194,9 +205,13 @@ header {
     font-size: 16px;
     line-height: 24px;
     color: #fff;
+    cursor: pointer;
 }
 
 .offer__image-container {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,4 +220,73 @@ header {
 .offer__image {
     width: 272px;
     height: 396px;
+}
+
+.cards-desc {
+    margin-top: 80px;
+
+    width: 1170px;
+
+    display: flex;
+}
+
+.cards-desc__main {
+    padding: 40px 0 0 40px;
+
+    height: 490px;
+    width: 570px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+
+    background-image: url("../images/cards-descr__main.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-desc__hashtag {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #637381;
+}
+
+.cards-desc__text {
+    margin-top: 12px;
+
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.cards-desc__secondary {
+    margin-left: 30px;
+
+    height: 490px;
+    width: 570px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards-desc__secondary-item {
+    padding: 40px 0 0 40px;
+
+    width: 100%;
+    height: 230px;
+}
+
+.card-accessories {
+    background-color: #D9EBFB;
+}
+
+.card-comfortable {
+    background-image: url(../images/cards-descr__second.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
